@@ -87,9 +87,7 @@ String bankCardType = mInfoUtil.getCardType(); // 可以获取卡片类型
  limitations under the License.
 ```
 
-allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+BankInfoUtil mInfoUtil = new BankInfoUtil(cardNum); // 把银行卡号作为参数传入
+String bankName = mInfoUtil.getBankName(); // 可以获取银行名称
+String bankId = mInfoUtil.getBankId();  // 可以获取银行编码
+String bankCardType = mInfoUtil.getCardType(); // 可以获取卡片类型
