@@ -25,3 +25,12 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+    	dependencies {
+	        implementation 'com.github.nanchen2251:BankCardUtils:1.0.2'
+	}
